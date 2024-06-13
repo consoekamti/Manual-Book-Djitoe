@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Pictures/Tim\ Djitoe\ Cropped.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.logo img {
+    position: fixed;
+    top: 20px;
+    left: 2%;
+    max-width: 120px;
+    height: auto;
+    z-index: 10;
+}
+
+.menu {
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(255,255,255,0.2));
+    background-size: 100% 100%;
+    z-index: 9;
+}   
+
+.menu a {
+    color: #333;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.menu a:hover {
+    color: #233ba5;
+}
+
+.menu.putih {
+    transition: 0.5s ease-in-out;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 2px #000;
+}
+
+.nav-icon {
+    z-index: 10;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    position: fixed;
+    top: 19px;
+    right: 3%;
+    width: 25px;
+    transition: all 0.4s ease;
+}
+
+.search img:hover{
+    transform: scale(1.05);
+    color: rgb(252, 3, 3);
+}
+
+.description {
+    color: #fff;
+    top: 50px;
+    text-align: center;
+    z-index: inherit;
+}
+
+
+main {
+    background-color: #f9f9f9;
+}
+
+.S7000,
+.S6000E,
+.S4000,
+.FM400,
+.HLP150,
+.HLP200 {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(45deg,#f9f9f9,#f9f9f9,#f9f9f9,#f9f9f9);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.S7000 h2,
+.S6000E h2,
+.S4000 h2,
+.FM400 h2,
+.HLP150 h2,
+.HLP200 h2 {
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.4);
+    background-size: 100% 100%;
+    font-weight: bold;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.2);
+}
+
+.card-container {
+    margin-top: 5PX;
+    transition: 2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 168px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    margin-top: 5px;
+    padding: 16px;
+}
+
+.card img {
+    top: 0;
+    left: 0.1%;
+    right: 0.1%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.card-content {
+    padding: 8px;
+}
+
+.card-content h3 {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.copyright {
+    color: #fafafa;
+    position: relative;
+    height: 100px;
+    background: #0a0a0a;
+    font-size: 13px;
+    margin-top: 350px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    opacity: 90%;
+}
+
+.copyright h5 {
+    margin-top: 2px;
+    font-weight: lighter;
+}
