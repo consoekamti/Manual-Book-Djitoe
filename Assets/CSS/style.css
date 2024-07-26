@@ -100,10 +100,15 @@
     top: 50%;
   }
   header .intro h3 {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 35px;
     margin: 0;
     padding: 0;
   }
+  header .intro p {
+    line-height: 0px;
+  }
+
   .tombol {
     opacity: 50%;
     background-color: #ffffff;
@@ -243,7 +248,7 @@
     background: rgba(0,0,0,0.2);
     backdrop-filter: blur(1px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 0px;
   }
   .tim1 img,
   .tim2 img {
@@ -288,7 +293,7 @@
     color: #ccc;
   }
   footer {
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 10px 0px;
     background-color: #343a40;
     color: #fff;
   }
